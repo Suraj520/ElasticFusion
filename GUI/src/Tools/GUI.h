@@ -62,7 +62,7 @@ class GUI
             colorProgram = std::shared_ptr<Shader>(loadProgramFromFile("draw_global_surface.vert", "draw_global_surface_phong.frag", "draw_global_surface.geom"));
             fxaaProgram = std::shared_ptr<Shader>(loadProgramFromFile("empty.vert", "fxaa.frag", "quad.geom"));
 
-            pangolin::ShowFullscreen(true);
+            pangolin::ShowFullscreen('1');
 
             glEnable(GL_DEPTH_TEST);
             glDepthMask(GL_TRUE);
